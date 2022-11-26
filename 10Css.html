@@ -8,9 +8,11 @@
 </head>
 <body>
     <!--Задание-->
-    Create a class called smaller-image and use it to resize the image so that it's only 100 pixels wide.
-    <!--Тест-->
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    Create a class called thick-green-border. This class should add a 10px, solid, green border around an HTML element. Apply the class to your cat photo.
+
+Remember that you can apply multiple classes to an element using its class attribute, by separating each class name with a space. For example:
+<!--Тест-->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   .red-text {
     color: red;
@@ -24,8 +26,15 @@
     font-size: 16px;
     font-family: monospace;
   }
+
   .smaller-image {
     width: 100px;
+  }
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+
   }
 </style>
 
@@ -33,7 +42,7 @@
 <main>
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
 
-  <a href="#" ><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"class = "smaller-image" alt="A cute orange cat lying on its back."></a>
+  <a href="#"><img class="thick-green-border smaller-image"  src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
 
   <div>
     <p>Things cats love:</p>
